@@ -539,7 +539,10 @@ body {
 }
 @media (max-width: 500px) {
     .post-content-excerpt {
-        font-size: 1.8rem;
+        font-size: 1rem;
+    }
+    .post-card-title {
+        font-size: 1.5rem;
     }
 }
 
