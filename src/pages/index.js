@@ -8,6 +8,9 @@ import PostCard from "../components/postCard"
 // import "../utils/global.scss"
 import "../utils/normalize.css"
 import "../utils/css/screen.css"
+
+import downloadFile from '../Gab-T-Resume.pdf'
+
 //TODO: switch to staticQuery, get rid of comments, remove unnecessary components, export as draft template
 const BlogIndex = ({ data }, location) => {
   const siteTitle = data.site.siteMetadata.title
@@ -26,7 +29,7 @@ const BlogIndex = ({ data }, location) => {
           <h2 className="page-head-title">
             {data.site.siteMetadata.description}
           </h2>
-          <a href="#" style={{marginRight: 'auto', marginTop: 20}} className="button large">
+          <a href={downloadFile} target="_blank" style={{marginRight: 'auto', marginTop: 20}} className="button large">
               Résumé
               </a>
         </header>
