@@ -96,10 +96,14 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-typography`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
-        pathToConfigModule: `src/utils/typography`,
-      },
+        fonts: [
+          `Barlow\:300,400,400i,600,700,800,400i,700i`,
+          `source sans pro\:300,400,400i,600,700,800,400i,700i` // you can also specify font weights and styles
+        ],
+        display: 'swap'
+      }
     },
     `gatsby-plugin-netlify`,
     `gatsby-plugin-offline`,
