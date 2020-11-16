@@ -32,12 +32,12 @@ const Layout = props => {
           </a>
           <nav id="swup" class="site-head-left">
             <ul className="nav" role="menu">
-              <li className="nav-home nav-current" role="menuitem">
+            {!toggleNav && (<li className="nav-home nav-current" role="menuitem">
                 <Link to={`/`}>Home</Link>
-              </li>
-              <li className="nav-work" role="menuitem">
+              </li>)}
+              {!toggleNav && (<li className="nav-work" role="menuitem">
                 <Link to={`#cards`}>Work</Link>
-              </li>
+              </li>)}
               {/* <li className="nav-elements" role="menuitem">
                 <Link to={`/elements`}>Elements</Link>
               </li> */}
