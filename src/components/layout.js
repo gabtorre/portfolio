@@ -3,7 +3,6 @@ import { Link } from "gatsby"
 
 const Layout = props => {
   const { title, children } = props
-  console.log(props)
   const [toggleNav, setToggleNav] = React.useState(false)
   
   if (typeof window !== "undefined") {

@@ -11,12 +11,11 @@ import "../utils/css/screen.css"
 
 import downloadFile from '../Gab-T-Resume.pdf'
 
-//TODO: switch to staticQuery, get rid of comments, remove unnecessary components, export as draft template
 const BlogIndex = ({ data }, location) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
   let postCounter = 0
-
+  
   return (
     <Layout title={siteTitle}>
       <SEO
