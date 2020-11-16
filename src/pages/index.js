@@ -17,7 +17,7 @@ const BlogIndex = ({ data }, location) => {
   return (
     <Layout title={siteTitle}>
       <SEO
-        title="All posts"
+        title="Home"
         keywords={[`blog`, `gatsby`, `javascript`, `react`]}
       />
       {/* <Bio /> */}
@@ -26,6 +26,9 @@ const BlogIndex = ({ data }, location) => {
           <h2 className="page-head-title">
             {data.site.siteMetadata.description}
           </h2>
+          <a href="#" style={{marginRight: 'auto', marginTop: 20}} className="button large">
+              Résumé
+              </a>
         </header>
       )}
       <div className="post-feed">
@@ -64,6 +67,9 @@ const indexQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
+            tech
+            git
+            live
             thumbnail {
               childImageSharp {
                 fluid(maxWidth: 1360) {

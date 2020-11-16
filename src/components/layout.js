@@ -3,7 +3,14 @@ import { Link } from "gatsby"
 
 const Layout = props => {
   const { title, children } = props
+  console.log(props)
   const [toggleNav, setToggleNav] = React.useState(false)
+  
+  if (typeof window !== "undefined") {
+    // eslint-disable-next-line global-require
+    require("smooth-scroll")('a[href*="#"]')
+  }
+
   return (
     <div className={`site-wrapper ${toggleNav ? `site-head-open` : ``}`}>
       <header className="site-head">
@@ -29,12 +36,12 @@ const Layout = props => {
               <li className="nav-home nav-current" role="menuitem">
                 <Link to={`/`}>Home</Link>
               </li>
-              <li className="nav-about" role="menuitem">
-                <Link to={`/about`}>About</Link>
+              <li className="nav-work" role="menuitem">
+                <Link to={`#cards`}>Work</Link>
               </li>
-              <li className="nav-elements" role="menuitem">
+              {/* <li className="nav-elements" role="menuitem">
                 <Link to={`/elements`}>Elements</Link>
-              </li>
+              </li> */}
             </ul>
           </nav>
           <div className="site-head-center">
@@ -45,29 +52,29 @@ const Layout = props => {
           <div className="site-head-right">
             <div className="social-links">
               <a
-                href="https://www.facebook.com"
-                title="Facebook"
+                href="https://github.com/gabtorre"
+                title="Gtihub"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Facebook
+                Github
               </a>
               <a
-                href="https://twitter.com"
-                title="Twitter"
+                href="https://www.linkedin.com/in/gabtorres/"
+                title="LinkedIn"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Twitter
+                LinkedIn
               </a>
-              <Link
-                to={`/rss.xml`}
-                title="RSS"
+              <a
+                href="mailto:gtorresx3@gmail.com"
+                title="Email"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                RSS
-              </Link>
+                Email
+              </a>
             </div>
           </div>
         </div>

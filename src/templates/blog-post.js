@@ -20,12 +20,35 @@ class BlogPostTemplate extends React.Component {
           className={`post-content ${post.frontmatter.thumbnail || `no-image`}`}
         >
           <header className="post-content-header">
-            <h1 className="post-content-title">{post.frontmatter.title}</h1>
+            <h2 className="post-content-title">{post.frontmatter.title}</h2>
           </header>
 
           {post.frontmatter.description && (
             <p class="post-content-excerpt">{post.frontmatter.description}</p>
           )}
+          
+          {post.frontmatter.tech && (
+            <p class="post-content-excerpt">
+              Technologies Used: {post.frontmatter.tech}</p>
+          )}
+
+          <ul className="actions">
+          {post.frontmatter.live && (
+            <li style={{marginLeft: 'auto'}}>
+            <a href={post.frontmatter.live} target="_blank" className="button primary">
+            See Live
+            </a>
+            </li>
+          )}
+
+          {post.frontmatter.git && (
+            <li style={{marginRight: 'auto'}}>
+            <a href={post.frontmatter.git} target="_blank" className="button">
+            See Code
+            </a>
+            </li>
+          )}
+          </ul>
 
           {post.frontmatter.thumbnail && (
             <div className="post-content-image">
@@ -72,6 +95,9 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        tech
+        git
+        live
         thumbnail {
           childImageSharp {
             fluid(maxWidth: 1360) {
