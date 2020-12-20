@@ -35,7 +35,7 @@ class BlogPostTemplate extends React.Component {
           <ul className="actions">
           {post.frontmatter.live && (
             <li style={{marginLeft: 'auto'}}>
-            <a href={post.frontmatter.live} target="_blank" className="button primary">
+            <a href={post.frontmatter.live} target="_blank" rel="noopener noreferrer" className="button primary">
             See Live
             </a>
             </li>
@@ -43,7 +43,7 @@ class BlogPostTemplate extends React.Component {
 
           {post.frontmatter.git && (
             <li style={{marginRight: 'auto'}}>
-            <a href={post.frontmatter.git} target="_blank" className="button">
+            <a href={post.frontmatter.git} target="_blank" rel="noopener noreferrer" className="button">
             See Code
             </a>
             </li>

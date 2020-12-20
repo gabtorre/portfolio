@@ -28,7 +28,7 @@ const BlogIndex = ({ data }, location) => {
           <h2 className="page-head-title">
             {data.site.siteMetadata.description}
           </h2>
-          <a href={downloadFile} target="_blank" style={{marginRight: 'auto', marginTop: 20}} className="button large">
+          <a href={downloadFile} target="_blank" rel="noopener noreferrer" style={{marginRight: 'auto', marginTop: 20}} className="button large">
               Résumé
               </a>
         </header>

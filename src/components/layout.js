@@ -35,12 +35,19 @@ const Layout = props => {
             {!toggleNav && (<li className="nav-home nav-current" role="menuitem">
                 <Link to={`/`}>Home</Link>
               </li>)}
-              {!toggleNav && (<li className="nav-work" role="menuitem">
-                <Link to={`#cards`}>Work</Link>
-              </li>)}
-              {/* <li className="nav-elements" role="menuitem">
-                <Link to={`/elements`}>Elements</Link>
-              </li> */}
+
+              <li className="nav-elements" role="menuitem">
+                <Link to={`/filmswithfriends`}>Films with Friends</Link>
+              </li>
+
+              <li className="nav-elements" role="menuitem">
+                <Link to={`/wayfarer`}>Wayfarer</Link>
+              </li>
+
+              <li className="nav-elements" role="menuitem">
+                <Link to={`/bookmein`}>BookMeIn</Link>
+              </li>
+
             </ul>
           </nav>
           <div className="site-head-center">
