@@ -32,48 +32,29 @@ const Wayfarer = ({ data }, location) => {
           </h2>
           <h3>
             An app for rating and talking about movies that lets users post twitter-style hot takes on movies.
-          </h3>        
+          </h3>
+          <ul className="actions fit" style={{padding: 0}}>
+            <li style={{paddingLeft: 0}}>
+              <a target="_blank" rel="noreferrer" href="https://movie-app-fe361.web.app/" className="button primary fit">
+                Live Demo
+              </a>
+              <sub>Email: demo@gmail.com - Password: Demo2020</sub>
+            </li>
+            <li>
+              <a target="_blank" rel="noreferrer" href="https://github.com/gabtorre/films-with-friends" className="button fit">
+                Source Code
+              </a>
+            </li>
+          </ul>
           <Video
             videoSrcURL="https://www.youtube.com/embed/tvD02p3Nay0"
             videoTitle="Films with Friends - Full Stack Application"
             className="kg-image"
           />
-          <div className="row">
-            <div className="col-6">
-              <div
-                style={{
-                  padding: "1rem",
-                  textAlign: "center",
-                }}
-              >
-                <div style={{fontSize: '2em'}}><AiFillGithub /></div>
-                {" "}
-                  <a target="_blank" rel="noreferrer" href="https://github.com/gabtorre/films-with-friends">
-                  Source Code 
-                  </a>
-                {" "}
-              </div>
-            </div>
-            <div className="col-6">
-              <div
-                style={{
-                  padding: "1rem",
-                  textAlign: "center",
-                }}
-              >
-                <div style={{fontSize: '2em'}}><BiLinkExternal /></div>
-                {" "}
-                  <a target="_blank" rel="noreferrer" href="https://movie-app-fe361.web.app/">
-                  Email: demo@gmail.com - Password: Demo2020
-                  </a>
-                {" "}
-              </div>
-            </div>
-          </div>
           <h4 id="heading-level-4">Features</h4>
           <p>
             <ul>
-              <li>Sign up and login to their account</li>
+              <li>Sign up and login to your account</li>
               <li>Login and Sign Up with your Google account</li>
               <li>Search for movies from The Movie Database API</li>
               <li>Post twitter-style movie reviews</li>

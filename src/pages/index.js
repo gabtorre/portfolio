@@ -15,7 +15,7 @@ const BlogIndex = ({ data }, location) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
   let postCounter = 0
-  
+
   return (
     <Layout title={siteTitle}>
       <SEO
@@ -28,7 +28,7 @@ const BlogIndex = ({ data }, location) => {
           <h2 className="page-head-title">
             {data.site.siteMetadata.description}
           </h2>
-          <a href={downloadFile} target="_blank" rel="noopener noreferrer" style={{marginRight: 'auto', marginTop: 20}} className="button large">
+          <a href={downloadFile} target="_blank" rel="noopener noreferrer" style={{marginRight: 'auto', marginTop: 20}} className="button primary fit">
               Résumé
               </a>
         </header>

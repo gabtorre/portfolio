@@ -32,44 +32,25 @@ const Wayfarer = ({ data }, location) => {
           </h2>
           <h3>
             A travel community app for users to share posts about their favorite locations around the world.
-          </h3>        
+          </h3>
+          <ul className="actions fit" style={{padding: 0}}>
+            <li style={{paddingLeft: 0}}>
+              <a target="_blank" rel="noreferrer" href="https://wayfarer-gkm.herokuapp.com/" className="button primary fit">
+                Live Demo
+              </a>
+              <sub>Username: demo - Password: demo1234</sub>
+            </li>
+            <li>
+              <a target="_blank" rel="noreferrer" href="https://github.com/gabtorre/wayfarer" className="button fit">
+                Source Code
+              </a>
+            </li>
+          </ul>
           <Video
             videoSrcURL="https://www.youtube.com/embed/Ek9-lvpS6ss"
             videoTitle="Wayfarer - Full Stack Application"
             className="kg-image"
           />
-          <div className="row">
-            <div className="col-6">
-              <div
-                style={{
-                  padding: "1rem",
-                  textAlign: "center",
-                }}
-              >
-                <div style={{fontSize: '2em'}}><AiFillGithub /></div>
-                {" "}
-                  <a target="_blank" rel="noreferrer" href="https://github.com/gabtorre/wayfarer">
-                  Source Code 
-                  </a>
-                {" "}
-              </div>
-            </div>
-            <div className="col-6">
-              <div
-                style={{
-                  padding: "1rem",
-                  textAlign: "center",
-                }}
-              >
-                <div style={{fontSize: '2em'}}><BiLinkExternal /></div>
-                {" "}
-                  <a target="_blank" rel="noreferrer" href="https://wayfarer-gkm.herokuapp.com/">
-                  Username: demo - Password: demo1234
-                  </a>
-                {" "}
-              </div>
-            </div>
-          </div>
           <h4 id="heading-level-4">Features</h4>
           <p>
             <ul>

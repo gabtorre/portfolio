@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 const Layout = props => {
   const { title, children } = props
   const [toggleNav, setToggleNav] = React.useState(false)
-  
+
   if (typeof window !== "undefined") {
     // eslint-disable-next-line global-require
     require("smooth-scroll")('a[href*="#"]')
@@ -32,9 +32,6 @@ const Layout = props => {
           </a>
           <nav id="swup" class="site-head-left">
             <ul className="nav" role="menu">
-            {!toggleNav && (<li className="nav-home nav-current" role="menuitem">
-                <Link to={`/`}>Home</Link>
-              </li>)}
 
               <li className="nav-elements" role="menuitem">
                 <Link to={`/filmswithfriends`}>Films with Friends</Link>
@@ -48,13 +45,19 @@ const Layout = props => {
                 <Link to={`/bookmein`}>BookMeIn</Link>
               </li>
 
+              <li className="nav-elements" role="menuitem">
+                <Link to={`/tic-tac-trivia`}>TicTacTrivia</Link>
+              </li>
+
             </ul>
           </nav>
+
           <div className="site-head-center">
             <Link className="site-head-logo" to={`/`}>
               {title}
             </Link>
           </div>
+          
           <div className="site-head-right">
             <div className="social-links">
               <a
