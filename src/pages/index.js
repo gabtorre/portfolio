@@ -9,7 +9,7 @@ import PostCard from "../components/postCard"
 import "../utils/normalize.css"
 import "../utils/css/screen.css"
 
-import downloadFile from '../Gab-T-Resume.pdf'
+import downloadFile from '../GABE-TORRES-WEB.pdf'
 
 const BlogIndex = ({ data }, location) => {
   const siteTitle = data.site.siteMetadata.title
