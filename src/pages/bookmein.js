@@ -7,6 +7,8 @@ import SEO from "../components/seo"
 import "../utils/normalize.css"
 import "../utils/css/screen.css"
 
+import BookMeInVid from "../BookMeIn.mp4"
+
 import { SiNodeDotJs } from 'react-icons/si';
 import { SiJquery } from 'react-icons/si';
 import { SiJavascript } from 'react-icons/si';
@@ -43,6 +45,11 @@ const Wayfarer = ({ data }, location) => {
               </a>
             </li>
           </ul>
+
+          <video controls style={{ width: `100%` }}>
+            <source src={BookMeInVid} type="video/mp4" />
+          </video>
+
           <h4 id="heading-level-4">Features</h4>
           <p>
             <ul>

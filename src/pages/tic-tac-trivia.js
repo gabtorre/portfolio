@@ -3,7 +3,6 @@ import { graphql, StaticQuery } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Video from "../components/video"
 
 import "../utils/normalize.css"
 import "../utils/css/screen.css"
