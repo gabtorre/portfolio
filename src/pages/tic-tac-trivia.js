@@ -8,8 +8,8 @@ import Video from "../components/video"
 import "../utils/normalize.css"
 import "../utils/css/screen.css"
 
-import { AiFillGithub } from 'react-icons/ai';
-import { BiLinkExternal } from 'react-icons/bi';
+import TicTacTriviaVid from "../TicTacTrivia.mp4"
+
 import { SiJquery } from 'react-icons/si';
 import { SiJavascript } from 'react-icons/si';
 import { SiCss3 } from 'react-icons/si';
@@ -44,11 +44,9 @@ const TicTacTrivia = ({ data }, location) => {
             </li>
           </ul>
 
-          <Video
-            videoSrcURL="https://www.youtube.com/embed/EOoAtRYmtAo"
-            videoTitle="TicTacTrivia"
-            className="kg-image"
-          />
+          <video controls style={{ width: `100%` }}>
+            <source src={TicTacTriviaVid} type="video/mp4" />
+          </video>
 
           <h4 id="heading-level-4">Features</h4>
           <p>

@@ -3,13 +3,10 @@ import { graphql, StaticQuery } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Video from "../components/video"
 
 import "../utils/normalize.css"
 import "../utils/css/screen.css"
 
-import { AiFillGithub } from 'react-icons/ai';
-import { BiLinkExternal } from 'react-icons/bi';
 import { SiNodeDotJs } from 'react-icons/si';
 import { SiJquery } from 'react-icons/si';
 import { SiJavascript } from 'react-icons/si';
@@ -46,11 +43,6 @@ const Wayfarer = ({ data }, location) => {
               </a>
             </li>
           </ul>
-          <Video
-            videoSrcURL="https://www.youtube.com/embed/07MXKdyYAr4"
-            videoTitle="BookMeIn - Full Stack Application"
-            className="kg-image"
-          />
           <h4 id="heading-level-4">Features</h4>
           <p>
             <ul>
