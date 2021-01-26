@@ -3,6 +3,7 @@ import { graphql, StaticQuery } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Video from "../components/video"
 
 import "../utils/normalize.css"
 import "../utils/css/screen.css"
@@ -43,9 +44,11 @@ const TicTacTrivia = ({ data }, location) => {
             </li>
           </ul>
 
-          <video controls style={{ width: `100%` }}>
-            <source src={TicTacTriviaVid} type="video/mp4" />
-          </video>
+          <Video
+            videoSrcURL="https://www.youtube.com/embed/EOoAtRYmtAo"
+            videoTitle="TicTacTrivia"
+            className="kg-image"
+          />
 
           <h4 id="heading-level-4">Features</h4>
           <p>

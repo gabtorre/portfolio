@@ -34,6 +34,10 @@ const Layout = props => {
             <ul className="nav" role="menu">
 
               <li className="nav-elements" role="menuitem">
+                <Link to={`/filmswithfriends-react-native`}>Films with Friends - React Native</Link>
+              </li>
+
+              <li className="nav-elements" role="menuitem">
                 <Link to={`/filmswithfriends`}>Films with Friends</Link>
               </li>
 

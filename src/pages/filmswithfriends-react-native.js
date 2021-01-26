@@ -8,8 +8,6 @@ import Video from "../components/video"
 import "../utils/normalize.css"
 import "../utils/css/screen.css"
 
-import FilmswithFriendsVid from "../FilmswithFriends.mp4"
-
 import { SiReact } from 'react-icons/si';
 import { FaSass } from 'react-icons/fa';
 import { SiJavascript } from 'react-icons/si';
@@ -18,12 +16,12 @@ import { SiBootstrap } from 'react-icons/si';
 import { SiCss3 } from 'react-icons/si';
 import { SiHtml5 } from 'react-icons/si';
 
-const FilmswithFriends = ({ data }, location) => {
+const FilmswithFriendsRN = ({ data }, location) => {
   const siteTitle = data.site.siteMetadata.title
 
   return (
     <Layout title={siteTitle}>
-      <SEO title="Films with Friends" keywords={[`react`, `firebase`, `javascript`]} />
+      <SEO title="FilmswithFriendsRN" keywords={[`react native`, `firebase`, `javascript`]} />
 
       <article className="post-content page-template no-image">
         <div className="post-content-body">
@@ -31,28 +29,28 @@ const FilmswithFriends = ({ data }, location) => {
             Films with Friends
           </h2>
           <h3>
-            A React app for rating and talking about movies that lets users post twitter-style hot takes on movies.
+            A React Native app for rating and talking about movies that lets users post twitter-style hot takes on movies.
           </h3>
           <ul className="actions fit" style={{padding: 0}}>
             <li style={{paddingLeft: 0}}>
-              <a target="_blank" rel="noreferrer" href="https://movie-app-fe361.web.app/" className="button primary fit">
+              <a target="_blank" rel="noreferrer" href="https://filmswithfriends.netlify.app/" className="button primary fit">
                 Live Demo
               </a>
               <sub>Email: demo@gmail.com - Password: Demo2020</sub>
             </li>
             <li>
-              <a target="_blank" rel="noreferrer" href="https://github.com/gabtorre/films-with-friends" className="button fit">
+              <a target="_blank" rel="noreferrer" href="https://github.com/gabtorre/fimlswithfriends-react-native" className="button fit">
                 Source Code
               </a>
             </li>
           </ul>
-          
+
           <Video
-            videoSrcURL="https://www.youtube.com/embed/tvD02p3Nay0"
-            videoTitle="Films with Friends - React"
+            videoSrcURL="https://www.youtube.com/embed/W_CnADZlSIo"
+            videoTitle="Films with Friends - React Native"
             className="kg-image"
           />
-
+          
           <h4 id="heading-level-4">Features</h4>
           <p>
             <ul>
@@ -77,7 +75,7 @@ const FilmswithFriends = ({ data }, location) => {
                 }}
               >
                 <h1><SiReact/></h1>
-                React
+                React Native
               </div>
             </div>
             <div className="col">
@@ -179,7 +177,7 @@ export default props => (
   <StaticQuery
     query={indexQuery}
     render={data => (
-      <FilmswithFriends location={props.location} data={data} {...props} />
+      <FilmswithFriendsRN location={props.location} data={data} {...props} />
     )}
   />
 )

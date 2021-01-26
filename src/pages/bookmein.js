@@ -3,11 +3,10 @@ import { graphql, StaticQuery } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Video from "../components/video"
 
 import "../utils/normalize.css"
 import "../utils/css/screen.css"
-
-import BookMeInVid from "../BookMeIn.mp4"
 
 import { SiNodeDotJs } from 'react-icons/si';
 import { SiJquery } from 'react-icons/si';
@@ -46,9 +45,11 @@ const Wayfarer = ({ data }, location) => {
             </li>
           </ul>
 
-          <video controls style={{ width: `100%` }}>
-            <source src={BookMeInVid} type="video/mp4" />
-          </video>
+          <Video
+            videoSrcURL="https://www.youtube.com/embed/07MXKdyYAr4"
+            videoTitle="BookMeIn"
+            className="kg-image"
+          />
 
           <h4 id="heading-level-4">Features</h4>
           <p>

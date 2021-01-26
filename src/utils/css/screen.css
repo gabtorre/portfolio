@@ -272,7 +272,7 @@ body {
     padding: 12px 12px 12px 0;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1500px) {
     .site-head {
         padding: 0;
     }
@@ -422,6 +422,7 @@ body {
 .post-card-link {
     flex: 1 1 auto;
     display: block;
+    border: 5px solid #f3f3f3;
 }
 
 .post-card-content {
