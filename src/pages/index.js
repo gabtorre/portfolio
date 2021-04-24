@@ -5,11 +5,10 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import PostCard from "../components/postCard"
 
-// import "../utils/global.scss"
 import "../utils/normalize.css"
 import "../utils/css/screen.css"
 
-import downloadFile from '../GABE-TORRES-WEB.pdf'
+import downloadFile from '../Gabriel_Torres_Resume_2021.pdf'
 
 const BlogIndex = ({ data }, location) => {
   const siteTitle = data.site.siteMetadata.title

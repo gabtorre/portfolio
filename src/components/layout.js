@@ -50,6 +50,10 @@ const Layout = props => {
               </li>
 
               <li className="nav-elements" role="menuitem">
+                <Link to={`/gabdev`}>gab.dev</Link>
+              </li>
+
+              <li className="nav-elements" role="menuitem">
                 <Link to={`/tic-tac-trivia`}>TicTacTrivia</Link>
               </li>
 
